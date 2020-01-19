@@ -2,7 +2,7 @@
 def fun(inp):
 	limit,variety=map(int,inp[0].rstrip('\n').split())
 	inp_pizza=list(map(int,inp[1].split()))
-	assert inp_pizza.__len__()!=variety,'The variety of pizza cannot exceed the input variety'
+	assert inp_pizza.__len__()==variety,'The variety of pizza cannot exceed the input variety'
 	dic=dict()
 	j=inp_pizza.__len__()-1
 	while(j>=0):
