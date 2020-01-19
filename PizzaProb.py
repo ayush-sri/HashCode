@@ -2,7 +2,7 @@
 def fun(inp):
 	limit,variety=map(int,inp[0].rstrip('\n').split())
 	inp_pizza=list(map(int,inp[1].split()))
-	assert inp_pizza.__len__()==variety,'The variety of pizza cannot exceed the input variety'
+	assert inp_pizza.__len__()!=variety,'The variety of pizza cannot exceed the input variety'
 	dic=dict()
 	j=inp_pizza.__len__()-1
 	while(j>=0):
@@ -15,4 +15,5 @@ def fun(inp):
 		dic[sum(lis)]=lis[::-1]
 		j-=1
 	return dic,[inp_pizza.index(i) for i in dic[max(dic.keys())]].__len__(),[inp_pizza.index(i) for i in dic[max(dic.keys())]]
+
 
