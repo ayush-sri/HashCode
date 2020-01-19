@@ -18,3 +18,6 @@ def fun(inp):
 
 
 ## d,l=fun(['17 4\n','2 5 6 8'])
+if __name__ == '__main__':
+    f = open("e_also_big.in",'r')
+
