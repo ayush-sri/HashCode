@@ -9,7 +9,7 @@ def hash(inp):
         lis = []
         i = j
         while(i>=0):
-            if (inp_pizza[i]+sum(lis)) <= limit:
+            if (inp_pizza[i]+sum(lis)) <= limit and inp_pizza[i] not in lis:
                 lis.append(inp_pizza[i])
             i-=1
         dic[sum(lis)] = lis[::-1]
