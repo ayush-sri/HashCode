@@ -17,7 +17,7 @@ def hash(inp):
     return [inp_pizza.index(i) for i in dic[max(dic.keys())]].__len__(), [inp_pizza.index(i) for i in dic[max(dic.keys())]]
 
 if __name__=='__main__':
-    name=input('Enter the file name:')
+    name=input()
     try:
         with open(name,'r') as file:
             inp = file.readlines()
