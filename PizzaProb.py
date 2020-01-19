@@ -17,3 +17,4 @@ def fun(inp):
 	return dic,[inp_pizza.index(i) for i in dic[max(dic.keys())]].__len__(),[inp_pizza.index(i) for i in dic[max(dic.keys())]]
 
 
+## fun(['17 4\n','2 5 6 8'])
